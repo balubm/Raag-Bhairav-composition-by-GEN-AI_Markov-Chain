@@ -74,7 +74,7 @@ Currently, the code is tested with an Indian Raag called **Raag Bhairav** as a t
     Displays how often each note-duration pair starts a melody in the training data.
     
     Transition Matrix
-  ![Transition Matrix](Assets/Transition-matrix.png)
+  ![Transition Matrix](Assets/Transition-matrix-map.png)
      
     Heatmap showing likelihood of transitions between all pairs of states.
 
