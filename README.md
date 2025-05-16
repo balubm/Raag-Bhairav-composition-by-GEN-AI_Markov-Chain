@@ -29,58 +29,56 @@ Currently, the code is tested with an Indian Raag called **Raag Bhairav** as a t
 
 ## 🚀 How to Run
 
-    1. Update MuseScore Path
-      Modify this line if MuseScore is installed elsewhere:
-  
-      us['musicxmlPath'] = '/Applications/MuseScore 3.app/Contents/MacOS/mscore'
-    2. Update the Midi Path and Key if you want to train a a different Raag/music
+  1. Update MuseScore Path
+    Modify this line if MuseScore is installed elsewhere:
+    us['musicxmlPath'] = '/Applications/MuseScore 3.app/Contents/MacOS/mscore'
+  2. Update the Midi Path and Key if you want to train a a different Raag/music
 
-    3. Run the Script
-  
+  3. Run the Script
       Raag Bhairav composition by GEN AI_Markov Chain.ipynb
-      
-    4. Provide Time Signature
-      
+    
+  4. Provide Time Signature
+    
       When prompted, enter a time signature such as:
-
+  
       Enter the time signature (e.g., 4/4, 3/4): 4/4
 
-    4. Output
+  4. Output
 
-        MusicXML file opens in MuseScore
+      MusicXML file opens in MuseScore
 
-        Matplotlib shows:
+      Matplotlib shows:
 
-            Initial state probability bar chart
+        Initial state probability bar chart
 
-            Transition matrix heatmap
+        Transition matrix heatmap
 
 ## 🎼 How It Works
 
-    States are defined as tuples of (pitch name + octave, duration in quarterLength), e.g., ('D4', 1.0).
+  States are defined as tuples of (pitch name + octave, duration in quarterLength), e.g., ('D4', 1.0).
 
-    Initial probabilities reflect how often each state starts a melody. But I have not used this, as I wanted to start the melody in the root key. D4 in this case!
+  Initial probabilities reflect how often each state starts a melody. But I have not used this, as I wanted to start the melody in the root key. D4 in this case!
 
-    Transition matrix defines probabilities of going from one state to another.
+  Transition matrix defines probabilities of going from one state to another.
 
-    Generation begins with a key (starting note) and randomly walks through the model until a desired total beat count is reached.
+  Generation begins with a key (starting note) and randomly walks through the model until a desired total beat count is reached.
 
 
 ## 📊 Visualizations
-    Score
+  Score
   ![Score](Assets/Score.png)
   
-    Initial State Probabilities: Displays how often each note-duration pair starts a melody in the training data.
+  Initial State Probabilities: Displays how often each note-duration pair starts a melody in the training data.
     
   ![Initial State Probabilities](Assets/Initial-probabilities.png)
     
 
-    Transition Matrix: Heatmap showing likelihood of transitions between all pairs of states.
+  Transition Matrix: Heatmap showing likelihood of transitions between all pairs of states.
   ![Transition Matrix](Assets/Transition-matrix-map.png)
      
     
 
 ## 🧠 Future Improvements
 
-    Add rest support and note articulations
+  Add rest support and note articulations
 
