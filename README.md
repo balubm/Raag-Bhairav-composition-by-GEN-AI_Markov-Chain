@@ -64,10 +64,12 @@ Currently, the code is tested with an Indian Raag called **Raag Bhairav** as a t
     Transition matrix defines probabilities of going from one state to another.
 
     Generation begins with a key (starting note) and randomly walks through the model until a desired total beat count is reached.
-  ![Score](Assets/Score.png)
+
 
 ## 📊 Visualizations
-
+    Score
+  ![Score](Assets/Score.png)
+  
     Initial State Probabilities
   ![Initial State Probabilities](Assets/Initial-probabilities.png)
     
