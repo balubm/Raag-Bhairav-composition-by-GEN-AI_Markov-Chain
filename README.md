@@ -68,12 +68,12 @@ Currently, the code is tested with an Indian Raag called **Raag Bhairav** as a t
 ## 📊 Visualizations
 
     Initial State Probabilities
-    ![Initial State Probabilities](Assets/Initial-probabilities.png)
+  ![Initial State Probabilities](Assets/Initial-probabilities.png)
     
     Displays how often each note-duration pair starts a melody in the training data.
     
     Transition Matrix
-    ![Transition Matrix](Assets/Transition-matrix map.png)
+  ![Transition Matrix](Assets/Transition-matrix map.png)
      
     Heatmap showing likelihood of transitions between all pairs of states.
 
